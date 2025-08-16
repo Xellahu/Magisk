@@ -7,8 +7,6 @@ import android.view.LayoutInflater
 import android.view.View
 import androidx.databinding.Bindable
 import com.topjohnwu.magisk.BR
-import com.topjohnwu.magisk.R
-import com.topjohnwu.magisk.core.BuildConfig
 import com.topjohnwu.magisk.core.Config
 import com.topjohnwu.magisk.core.Const
 import com.topjohnwu.magisk.core.Info
@@ -55,11 +53,6 @@ object LanguageSystem : BaseSettingsItem.Blank() {
             val locale = LocaleSetting.instance.appLocale
             return locale?.getDisplayName(locale)?.asText() ?: CoreR.string.system_default.asText()
         }
-}
-
-object Theme : BaseSettingsItem.Blank() {
-    override val icon = R.drawable.ic_paint
-    override val title = CoreR.string.section_theme.asText()
 }
 
 // --- App
